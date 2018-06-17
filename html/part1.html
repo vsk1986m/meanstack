@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dating Website</title>
+</head>
+
+<body>
+  <h1>Please Enter Your Details For Our Dating Website</h1>
+
+  <form  action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php"
+  method="post" enctype="multipart/form-data">
+    <fieldset>
+      <legend>Your Face</legend>
+      <label for="image">Your image: </label>
+      <input type="file" id="image" name="image" required><br>
+      <label for="preview">Image preview: </label>
+      <img src="" id = "preview">
+    </fieldset>
+
+    <fieldset>
+      <legend>Your General Details</legend>
+      <label for="namedetail">Name: </name>
+      <input type="text" id="namedetail" name="namedetail" placeholder="Your full name" required><br>
+      <label for="gender">Gender: </label>
+      <input type="radio" id="gender" name="gender" value="male" required> Male
+      <input type="radio" id="gender" name="gender" value ="female" required>
+      Female<br>
+      <label for="age">Age: </label>
+      <input type="number" min="0" max="99" step="1" id="age" name="age"
+      value="18" required><br>
+      <label for="dob">Date of birth: </label>
+      <input type="date" id="dob" name="dob"><br>
+      <label for="color">Favorite Color: </label>
+      <input type="color" id="color" name="color"><br>
+      <label for="country">Which Country:</label>
+      <select name="country" id="country">
+        <option value="None">    </option>
+        <option value="Netherlands">Netherlands</option>
+        <option value="Germany">Germany</option>
+        <option value="Sweden">Sweden</option>
+        <option value="Belgium">Belgium</option>
+        <option value="India">India</option></select><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Your Indicators</legend>
+      <label for="Height">Height: </label>
+      Short<input type="range" min="0" max="100" step="10" value="50"
+      id= "Height" name="Height" min="0" max="100">
+      Tall<br>
+      <label for="Salary">Salary: </label>
+      Poor<input type="range" min="0" max="100" step="10" value="50"
+      id= "Salary" name="Salary" min="0" max="100">
+      Rich<br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Your Indicators</legend>
+      <label for="Email">Email: </label>
+      <input type="email" id= "Email" name="Email" required><br>
+      <label for="mobile">Mobile: </label>
+      <input type="tel" id= "mobile" name="mobile"><br>
+      <label for="address">Address: </label>
+      <textarea rows="2" cols="40" id="address" name="address"></textarea><br>
+      <label for="contact">Method to contact you: </label>
+      <input type="checkbox" id="contact" name="contact" value="email">Email
+      <input type="checkbox" id="contact" name="contact" value="whatsapp">Whatsapp
+      <input type="checkbox" id="contact" name="contact" value="appchat">In-app chat
+    </fieldset>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
